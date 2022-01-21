@@ -1,0 +1,15 @@
+<a
+  [routerLink]="['/film/' + item.id]"
+  routerLinkActive="router-link-active"
+  class="movie-item"
+  *ngIf="item"
+>
+  <div class="movie-item-rating">
+    <span><i class="fas fa-star"></i></span>
+    <span>{{ item.vote_average }}</span> / 10
+  </div>
+  <div class="movie-item-image">
+    <img [src]="imagesSizes.medium + item.backdrop_path" />
+  </div>
+  <div class="movie-item-title">{{ item.original_title }}</div>
+</a>

@@ -1,0 +1,79 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35rem;
+  color: #999;
+  background-color: #000;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  display: flex;
+  height: 35rem;
+  width: 100%;
+}
+.slide-bg {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+}
+.slide-bg::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  content: "";
+
+  background-image: linear-gradient(
+    to right,
+    #000 0,
+    transparent 75%,
+    transparent 100%
+  );
+}
+.slide-bg-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide-pane {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  top: 5rem;
+  left: 5rem;
+}
+.movie-name {
+  font-size: 2.8em;
+}
+.meta {
+  font-size: 1.4em;
+  color: #999;
+}
+
+span:not(:last-child)::after {
+  content: "|";
+  margin-right: 9px;
+  margin-left: 9px;
+}
+
+.desc {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating-value {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.fas {
+  color: #fbc02d;
+  margin-right: 10px;
+  font-size: 22px;
+}

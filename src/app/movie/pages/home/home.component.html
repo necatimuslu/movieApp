@@ -1,0 +1,14 @@
+<app-slider [items]="populerMovies"></app-slider>
+
+<app-item-banner
+  [upcoming]="upcomingMovies"
+  title="Yeni Filmler"
+></app-item-banner>
+<app-item-banner
+  [toprated]="topRatedMovies"
+  title="En Çok Oy Alan Filmler"
+></app-item-banner>
+<app-item-banner
+  [playing]="nowPlaying"
+  title="Sinemadaki Filmler"
+></app-item-banner>

@@ -1,0 +1,23 @@
+<div class="container-fluid bg-dark">
+  <h5
+    style="margin-right: 0; margin-left: 0"
+    class="text-center text-white movie-title"
+  >
+    {{ title }}
+  </h5>
+  <div class="row">
+    <div class="col-sm-12 col-md-3 col-lg-2" *ngFor="let item of upcoming">
+      <app-movie-card [item]="item"></app-movie-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-3 col-lg-2" *ngFor="let item of toprated">
+      <app-movie-card [item]="item"></app-movie-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-3 col-lg-2" *ngFor="let item of playing">
+      <app-movie-card [item]="item"></app-movie-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<ng-container [ngSwitch]="site">
+  <ng-container *ngSwitchCase="'YouTube'">
+    <iframe
+      width="100%"
+      height="315"
+      [src]="videoUrl"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </ng-container>
+  <ng-container *ngSwitchCase="'Vimeo'">
+    <iframe
+      src="https://player.vimeo.com/video/661401301?h=b41146481f"
+      width="100%"
+      height="360"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p>
+      <a href="https://vimeo.com/661401301"
+        >The Gallery That Destroys All Shame</a
+      >
+      from
+      <a href="https://vimeo.com/user139285080"
+        >Aurora Brachman &amp; Jessie Zinn</a
+      >
+      on <a href="https://vimeo.com">Vimeo</a>.
+    </p>
+  </ng-container>
+</ng-container>
